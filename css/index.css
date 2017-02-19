@@ -1,0 +1,52 @@
+body {
+	font-family: DFKai-sb;
+	background-color: rgb(240, 240, 240);
+	text-decoration:none;
+}
+.navbar-left {
+	font-size: 48px;
+}
+.navbar-right {
+	font-size: 24px;
+}
+a{
+	text-decoration:none;
+	color: black;
+}
+.subjectIndex {
+	font-size: 24px;
+}
+.subjectIndex:hover {
+	background-color: rgb(220, 220, 220);
+}
+.container {
+	width: 100%;
+}
+#title {
+	width: 80%;
+}
+span {
+	font-size: 24px;
+}
+.unitIndex {
+	font-size: 18px;
+	width: 100%;
+	text-align: left;
+	display: block;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+}
+.unitIndex:hover {
+	background-color: rgb(220, 220, 220);
+}
+.chapterIndex {
+	font-size: 16px;
+	width: 100%;
+	text-align: left;
+	display: block;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+}
+.chapterIndex:hover {
+	background-color: rgb(220, 220, 220);
+}

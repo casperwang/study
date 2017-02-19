@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>study</title>
+	<meta charset="utf-8">
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="js/forerunner.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div id="title" class="container">
+			<ul class="nav navbar-nav navbar-left">
+				各科學習筆記
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">科目<span class="caret"></span></a>
+	    			<ul class="dropdown-menu">
+		    			<li><a href="javascript:subject();chinese();" class="subjectIndex">國文</a></li>
+		    			<li><a href="javascript:subject();english();" class="subjectIndex">英文</a></li>
+		    			<li><a href="javascript:subject();math();" class="subjectIndex">數學</a></li>
+		    			<li><a href="javascript:subject();geography();" class="subjectIndex">地理</a></li>
+		    			<li><a href="javascript:subject();history();" class="subjectIndex">歷史</a></li>
+		    			<li><a href="javascript:subject();citizen();" class="subjectIndex">公民</a></li>
+		    			<li><a href="javascript:subject();biology();" class="subjectIndex">生物</a></li>
+		    			<li><a href="javascript:subject();science();" class="subjectIndex">理化</a></li>
+		    			<li><a href="javascript:subject();earthScience();" class="subjectIndex">地科</a></li>
+	    			</ul>
+    			</li>
+			</ul>
+		</div>
+	</nav>
+	<br><br><br><br>
+	<div class="container">
+		<div class="row">
+			<div class= "col-md-4">
+				<div id= "chinese" class= "subject"></div>
+				<div id= "english" class= "subject"></div>
+				<div id= "math" class= "subject"></div>
+				<div id= "geography" class= "subject">
+					<span>台灣地理</span>
+					<a href="javascript:unit();" class="geography unitIndex" style="text-decoration:none;color: black">位置與範圍</a>
+					<a href="javascript:unit();" class="geography unitIndex" style="text-decoration:none;color: black">地形、海岸與島嶼</a>
+					<a href="javascript:unit();" class="geography unitIndex" style="text-decoration:none;color: black">天氣與氣候</a>
+					<a href="javascript:unit();" class="geography unitIndex" style="text-decoration:none;color: black">水文、生態與環境保護</a>
+					<a href="javascript:unit();" class="geography unitIndex" style="text-decoration:none;color: black">台灣的人口</a>
+					<a href="javascript:unit();" class="geography unitIndex" style="text-decoration:none;color: black">台灣的產業</a>
+					<a href="javascript:unit();" class="geography unitIndex" style="text-decoration:none;color: black">交通與聚落</a>
+					<a href="javascript:unit();" class="geography unitIndex" style="text-decoration:none;color: black">台灣的區域發展</a>
+				</div>
+				<div id= "history" class= "subject"></div>
+				<div id= "citizen" class= "subject"></div>
+				<div id= "biology" class= "subject">
+					<a href="javascript:unit();biologyA1();" class="biology unitIndex" style="text-decoration:none;color: black">生命世界</a>
+					<div id= "biologyA1" class= "unit">
+						<a href="#" class="biology chapterIndex" style="text-decoration:none;color: black">&nbsp;生物與環境</a>
+						<a href="#" class="biology chapterIndex" style="text-decoration:none;color: black">&nbsp;生物體的構造</a>
+						<a href="#" class="biology chapterIndex" style="text-decoration:none;color: black">&nbsp;實驗&nbsp;顯微鏡的使用與科學方法</a>
+						<a href="#" class="biology chapterIndex" style="text-decoration:none;color: black">&nbsp;物質進出細胞</a>
+					</div>
+					<a href="javascript:unit();" class="biology unitIndex" style="text-decoration:none;color: black">養分的獲得</a>
+					<a href="javascript:unit();" class="biology unitIndex" style="text-decoration:none;color: black">生物體內物質的運輸</a>
+					<a href="javascript:unit();" class="biology unitIndex" style="text-decoration:none;color: black">協調作用</a>
+					<a href="javascript:unit();" class="biology unitIndex" style="text-decoration:none;color: black">恆定性</a>
+					<a href="javascript:unit();" class="biology unitIndex" style="text-decoration:none;color: black">生殖</a>
+					<a href="javascript:unit();" class="biology unitIndex" style="text-decoration:none;color: black">遺傳</a>
+					<a href="javascript:unit();" class="biology unitIndex" style="text-decoration:none;color: black">演化</a>
+					<a href="javascript:unit();" class="biology unitIndex" style="text-decoration:none;color: black">生物圈的生物</a>
+					<a href="javascript:unit();" class="biology unitIndex" style="text-decoration:none;color: black">生物與環境</a>
+				</div>
+				<div id= "science" class= "subject"></div>
+				<div id= "earthScience" class= "subject"></div>
+			</div>
+			<div class= "col-md-8"></div>
+		</div>
+	</div>
+	<script language="javascript">
+		$('.subject').hide();
+		$('.unit').hide();
+		function subject() {
+			$('.subject').hide();
+		}
+		function unit() {
+			$('.unit').hide();
+		}
+		$('#chineseButton').on('click', chinese);
+		function chinese() {
+			$('#chinese').show();
+		}
+		function english() {
+			$('#english').show();
+		}
+		function math() {
+			$('#math').show();
+		}
+		function geography() {
+			$('#geography').show();
+		}
+		function history() {
+			$('#history').show();
+		}
+		function citizen() {
+			$('#citizen').show();
+		}
+		function biology() {
+			$('#biology').show();
+		}
+		function biologyA1() {
+			$('#biologyA1').show();
+		}
+		function science() {
+			$('#science').show();
+		}
+		function earthScience() {
+			$('#earthScience').show();
+		}
+	</script>
+</body>
+</html>
