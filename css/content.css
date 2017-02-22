@@ -1,0 +1,78 @@
+.content {
+	font-size: 18px;
+}
+.t {
+	font-size: 28px;
+	text-align: center;
+	padding: 2px 12px;
+	border-radius: 5px;
+	color: white;
+}
+.c20 {
+	margin-left: 20px;
+}
+.st {
+	font-size: 20px;
+	padding: 2px 12px;
+	border-radius: 5px;
+	color: rgb(0, 32, 96);
+}
+.sst {
+	font-size: 19px;
+}
+.c {
+	margin-left: 5px;
+}
+ul {
+	font-size: 18px;
+
+}
+table {
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+td, tr {
+	border: 1.0px solid black;
+	padding: 1px 4px;
+	margin-left: 20px;
+}
+.td {
+	text-align: center;
+}
+.citizenU1T {
+	background: -webkit-linear-gradient(left top, rgb(0, 0, 160), rgb(0, 0, 80));
+}
+.citizenU1St {
+	border: 3px solid rgb(0, 0, 120);
+}
+.l5 {
+	width: 130px;
+}
+.l12 {
+	width: 270px;
+}
+#citizenU1C1Tiangle1 {
+	margin-left: 120px;
+	margin-bottom: 0px;
+	width: 100px;
+	height: 0;
+	border-style: solid;
+	border-width: 0 50px 86.6px 50px;
+	border-color: transparent transparent rgb(255, 255, 0) transparent;
+}
+#citizenU1C1Tiangle2 {
+	margin-left: 70px;
+	margin-bottom: 0px;
+	width: 200px;
+	height: 0;
+	border-style: solid;
+	border-width: 0 50px 86.6px 50px;
+	border-color: transparent transparent rgb(255, 150, 0) transparent;
+}
+#citizenU1C1Tiangle3 {
+	width: 300px;
+	height: 0;
+	border-style: solid;
+	border-width: 0 50px 86.6px 50px;
+	border-color: transparent transparent rgb(255, 0, 0) transparent;
+}
