@@ -105,6 +105,9 @@ $("#math"      ).append(createUnit("幾何證明與三角形的心"));
 $("#math"      ).append(createUnit("二次函數"));
 $("#math"      ).append(createUnit("立體圖形"));
 $("#math"      ).append(createUnit("資料整理與統計"));
+//---歷史目錄---
+$("#history"   ).append(createUnit("中國歷史"));
+$("#history"   ).append(createChapter("晚清的變局","中國歷史"));
 //---公民目錄---
 $("#citizen"   ).append(createUnit("法律生活"));
 $("#citizen"   ).append(createChapter("法律的基本概念","法律生活"));
