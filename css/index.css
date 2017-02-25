@@ -16,10 +16,11 @@ body {
     font-size: 24px;
     text-decoration:none;
     border: 2px solid rgb(210, 210, 210);
-    margin-left: -20px;
+    background-color: rgb(210, 210, 210);
+    margin-right: -10px;
 }
 .subjectIndex:hover {
-	background-color: rgb(200, 200, 200);
+	background-color: rgb(190, 190, 190);
 }
 a{
 	text-decoration:none;
