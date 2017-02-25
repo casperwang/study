@@ -2,9 +2,10 @@ body {
 	font-family: DFKai-sb;
 	background-color: rgb(240, 240, 240);
 	text-decoration:none;
+	display:none;
 }
 #title {
-	font-size: 48px;
+	font-size: 52px;
 	text-align: left;
 	margin-left: 20px;
 	margin-right: 20px;

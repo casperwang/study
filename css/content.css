@@ -15,7 +15,7 @@
 	font-size: 20px;
 	padding: 2px 12px;
 	border-radius: 5px;
-	color: rgb(0, 32, 96);
+	color: black;
 	border: 3px solid;
 }
 .sst {
@@ -35,7 +35,7 @@ table {
 	margin-bottom: 10px;
 	margin-left: 20px;
 }
-td, tr {
+td,tr {
 	border: 1.0px solid black;
 	padding: 1px 4px;
 	margin-left: 20px;
@@ -49,8 +49,20 @@ td, tr {
 .l7 {
 	width: 170px;
 }
+.l9 {
+	width: 210px;
+}
+.l11 {
+	width: 250px;
+}
 .l12 {
 	width: 270px;
+}
+.historyU1T {
+	background: -webkit-linear-gradient(left top, rgb(200, 130, 90), rgb(200, 170, 90));
+}
+.historyU1S {
+	border-color: rgb(200, 150, 90);
 }
 .historyU2T {
 	background: -webkit-linear-gradient(left top, rgb(200, 20, 0), rgb(200, 100, 0));

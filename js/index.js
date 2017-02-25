@@ -1,10 +1,11 @@
 var nowUnit;
 var nowChapter;
-$('.chapterIndex').hide();
-$('.subjectIndex').hide();
-$('.subject').hide();
 $('.content').hide();
+$('.subjectIndex').hide();
+$('.chapterIndex').hide();
+$('.subject').hide();
 $('#myDropdown').hide();
+$('body').show();
 function createSpan(unit) {
 	return "<span style='text-decoration:none;color: black;font-size: 28px;'>" + unit + "</span>";
 }
@@ -106,7 +107,26 @@ $("#math"      ).append(createUnit("二次函數"));
 $("#math"      ).append(createUnit("立體圖形"));
 $("#math"      ).append(createUnit("資料整理與統計"));
 //---歷史目錄---
+$("#history"   ).append(createUnit("台灣歷史"));
+$("#history"   ).append(createChapter("史前台灣與原住民文化","台灣歷史"));
+$("#history"   ).append(createChapter("國際競爭下的台灣","台灣歷史"));
+$("#history"   ).append(createChapter("鄭氏時期的經營","台灣歷史"));
+$("#history"   ).append(createChapter("清領前期的政治與經濟","台灣歷史"));
+$("#history"   ).append(createChapter("清領前期的社會與文化","台灣歷史"));
+$("#history"   ).append(createChapter("清領後期的開港與建省","台灣歷史"));
+$("#history"   ).append(createChapter("日治時期的殖民統治","台灣歷史"));
+$("#history"   ).append(createChapter("日治時期的經濟發展","台灣歷史"));
+$("#history"   ).append(createChapter("日治時期的社會與文化","台灣歷史"));
+$("#history"   ).append(createChapter("戰後台灣的政治變遷","台灣歷史"));
+$("#history"   ).append(createChapter("戰後台灣的外交與兩岸關係","台灣歷史"));
+$("#history"   ).append(createChapter("戰後台灣的經濟與社會","台灣歷史"));
 $("#history"   ).append(createUnit("中國歷史"));
+$("#history"   ).append(createChapter("從史前到春秋戰國","中國歷史"));
+$("#history"   ).append(createChapter("秦漢大一統帝國的建立","中國歷史"));
+$("#history"   ).append(createChapter("魏晉南北朝的分與合","中國歷史"));
+$("#history"   ).append(createChapter("胡漢融合的隋唐帝國","中國歷史"));
+$("#history"   ).append(createChapter("多民族並立的宋元時期","中國歷史"));
+$("#history"   ).append(createChapter("明代與盛清的發展","中國歷史"));
 $("#history"   ).append(createChapter("晚清的變局","中國歷史"));
 //---公民目錄---
 $("#citizen"   ).append(createUnit("法律生活"));
