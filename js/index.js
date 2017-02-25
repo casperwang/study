@@ -1,10 +1,8 @@
 var nowUnit;
 var nowChapter;
 $('.content').hide();
-$('.subjectIndex').hide();
 $('.chapterIndex').hide();
 $('.subject').hide();
-$('#myDropdown').hide();
 $('body').show();
 function createSpan(unit) {
 	return "<span style='text-decoration:none;color: black;font-size: 28px;'>" + unit + "</span>";
@@ -33,14 +31,6 @@ function chapter(chapter, unit) {
 	$('.c' + chapter).text(">　" + chapter);
 	$('#' + chapter).show();
 	nowChapter = chapter;
-}
-function myFunction() {
-	$('.subjectIndex').show();
-}
-window.onclick = function(event) {
-	if (!event.target.matches('.dropbtn')) {
-		$('.subjectIndex').hide();
-	}
 }
 //---數學目錄---
 $("#math"      ).append(createUnit("整數的四則運算"));
