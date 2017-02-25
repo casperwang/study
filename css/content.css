@@ -16,11 +16,13 @@
 	padding: 2px 12px;
 	border-radius: 5px;
 	color: rgb(0, 32, 96);
+	border: 3px solid;
 }
 .sst {
 	font-size: 19px;
 	padding: 1px 6px;
 	margin-left: 10px;
+	border-bottom: 2px solid;
 }
 .c {
 	margin-left: 5px;
@@ -53,17 +55,14 @@ td, tr {
 .historyU2T {
 	background: -webkit-linear-gradient(left top, rgb(200, 20, 0), rgb(200, 100, 0));
 }
-.historyU2St {
-	border: 3px solid rgb(200, 60, 0);
-}
-.historyU2Sst {
-	border-bottom: 2px solid rgb(200, 60, 0);
+.historyU2S {
+	border-color: rgb(200, 60, 0);
 }
 .citizenU3T {
 	background: -webkit-linear-gradient(left top, rgb(0, 0, 160), rgb(0, 0, 80));
 }
-.citizenU3St {
-	border: 3px solid rgb(0, 0, 120);
+.citizenU3S {
+	border-color: rgb(0, 0, 120);
 }
 .srcString {
 	position:relative;
