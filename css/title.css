@@ -1,3 +1,21 @@
+.l2 {
+	width: 70px;
+}
+.l5 {
+	width: 130px;
+}
+.l7 {
+	width: 170px;
+}
+.l9 {
+	width: 210px;
+}
+.l11 {
+	width: 250px;
+}
+.l12 {
+	width: 270px;
+}
 .mathU1T {
 	background: -webkit-linear-gradient(left top, rgb(0, 160, 80), rgb(0, 160, 120));
 }
