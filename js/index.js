@@ -26,9 +26,9 @@ function unit(unit) {
 }
 function chapter(chapter, unit) {
 	$('#' + nowChapter).hide();
-	$('.c' + nowChapter).text("　 " + nowChapter);
+	$('.c' + nowChapter).css("font-weight","normal");
 	$('.u' + unit).show();
-	$('.c' + chapter).text(">　" + chapter);
+	$('.c' + chapter).css("font-weight","bold");
 	$('#' + chapter).show();
 	nowChapter = chapter;
 }

@@ -11,7 +11,7 @@ body {
 	margin-right: 20px;
 }
 .subjectIndex {
-    padding: 2px 9px;
+    padding: 6px 9px;
     color: black;
     font-size: 24px;
     text-decoration:none;
@@ -21,6 +21,12 @@ body {
 }
 .subjectIndex:hover {
 	background-color: rgb(190, 190, 190);
+	text-decoration:none;
+	color: black;
+}
+.subjectIndex:focus {
+	text-decoration:none;
+	color: black;
 }
 a{
 	text-decoration:none;
