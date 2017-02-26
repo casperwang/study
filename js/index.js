@@ -5,7 +5,7 @@ $('.chapterIndex').hide();
 $('.subject').hide();
 $('body').show();
 function createSpan(unit) {
-	return "<span style='text-decoration:none;color: black;font-size: 28px;'>" + unit + "</span>";
+	return "<p style='text-decoration:none;color: black;font-size: 28px;'>" + unit + "</p>";
 }
 function createUnit(unit) {
 	return "<a href='javascript:unit(\"" + unit + "\");' class='" + unit + " unitIndex' style='text-decoration:none;color: black;font-size: 24px;'>&nbsp;" + unit + "</a>";
@@ -14,10 +14,20 @@ function createChapter(chapter,unit) {
 	return "<a href='javascript:chapter(\"" + chapter + "\",\"" + unit +"\");' class='biology chapterIndex u" + unit + " c" + chapter + "' style='text-decoration:none;color: black;font-size: 20px;'> &nbsp;&nbsp;&nbsp;" + chapter + "</a>";
 }
 function subject(subject) {
-	$('.subject').hide();
 	$('.chapterIndex').hide();
-	$(subject).show();
 	$('.content').hide();
+	$('.subject').hide();
+	if (subject == '#society') {
+		$('#geography'   ).show();
+		$('#history'     ).show();
+		$('#citizen'     ).show();
+	} else if (subject == '#natural'){
+		$('#biology'     ).show();
+		$('#science'     ).show();
+		$('#earthScience').show();
+	} else {
+		$(subject).show();
+	}
 }
 function unit(unit) {
 	$('.chapterIndex').hide();
@@ -33,22 +43,21 @@ function chapter(chapter, unit) {
 	nowChapter = chapter;
 }
 //---數學目錄---
-$("#math"      ).append(createUnit("整數的四則運算"));
-$("#math"      ).append(createChapter("正負數、數線與絕對值","整數的四則運算"));
-$("#math"      ).append(createChapter("整數的加減法","整數的四則運算"));
-$("#math"      ).append(createChapter("整數的乘除與四則運算","整數的四則運算"));
-$("#math"      ).append(createChapter("乘方與指數律","整數的四則運算"));
-$("#math"      ).append(createChapter("科學記號","整數的四則運算"));
-$("#math"      ).append(createUnit("分數的四則運算"));
-$("#math"      ).append(createChapter("因數、倍數與質因數分解","分數的四則運算"));
-$("#math"      ).append(createChapter("最大公因數與最小公倍數","分數的四則運算"));
-$("#math"      ).append(createChapter("分數的加減","分數的四則運算"));
-$("#math"      ).append(createChapter("分數的乘除與四則運算","分數的四則運算"));
+$("#math"      ).append(createUnit("整數的運算"));
+$("#math"      ).append(createChapter("數與數線","整數的運算"));
+$("#math"      ).append(createChapter("整數的加減運算","整數的運算"));
+$("#math"      ).append(createChapter("整數的乘除運算","整數的運算"));
+$("#math"      ).append(createChapter("指數律","整數的運算"));
+$("#math"      ).append(createChapter("科學記號","整數的運算"));
+$("#math"      ).append(createUnit("分數的運算"));
+$("#math"      ).append(createChapter("因數與倍數","分數的運算"));
+$("#math"      ).append(createChapter("最大公因數與最小公倍數","分數的運算"));
+$("#math"      ).append(createChapter("分數的加減運算","分數的運算"));
+$("#math"      ).append(createChapter("分數的乘除與四則運算","分數的運算"));
 $("#math"      ).append(createUnit("一元一次方程式"));
-$("#math"      ).append(createChapter("以符號代表數","一元一次方程式"));
-$("#math"      ).append(createChapter("一次式的運算","一元一次方程式"));
-$("#math"      ).append(createChapter("解一元一次方程式","一元一次方程式"));
-$("#math"      ).append(createChapter("應用問題","一元一次方程式"));
+$("#math"      ).append(createChapter("以符號列式與運算","一元一次方程式"));
+$("#math"      ).append(createChapter("一元一次方程式的列式與求解","一元一次方程式"));
+$("#math"      ).append(createChapter("一元一次方程式的應用","一元一次方程式"));
 $("#math"      ).append(createUnit("二元一次聯立方程式"));
 $("#math"      ).append(createChapter("二元一次方程式","二元一次聯立方程式"));
 $("#math"      ).append(createChapter("二元一次聯立方程式","二元一次聯立方程式"));
@@ -96,7 +105,36 @@ $("#math"      ).append(createUnit("幾何證明與三角形的心"));
 $("#math"      ).append(createUnit("二次函數"));
 $("#math"      ).append(createUnit("立體圖形"));
 $("#math"      ).append(createUnit("資料整理與統計"));
+//---地理目錄---
+$("#geography" ).append(createSpan("地理"));
+$("#geography" ).append(createUnit("台灣地理"));
+$("#geography" ).append(createChapter("地理位置與範圍","台灣地理"));
+$("#geography" ).append(createChapter("地形","台灣地理"));
+$("#geography" ).append(createChapter("海岸與島嶼","台灣地理"));
+$("#geography" ).append(createChapter("天氣與氣候","台灣地理"));
+$("#geography" ).append(createChapter("水文","台灣地理"));
+$("#geography" ).append(createChapter("台灣的環境問題與環境保護","台灣地理"));
+$("#geography" ).append(createChapter("人口","台灣地理"));
+$("#geography" ).append(createChapter("第一級產業","台灣地理"));
+$("#geography" ).append(createChapter("第二、三級產業","台灣地理"));
+$("#geography" ).append(createChapter("聚落與交通","台灣地理"));
+$("#geography" ).append(createChapter("台灣的區域特色及發展","台灣地理"));
+$("#geography" ).append(createUnit("中國地理"));
+$("#geography" ).append(createChapter("疆域與區域劃分","中國地理"));
+$("#geography" ).append(createChapter("地形","中國地理"));
+$("#geography" ).append(createChapter("氣候與水文","中國地理"));
+$("#geography" ).append(createChapter("人口分布與人口問題","中國地理"));
+$("#geography" ).append(createChapter("產業與經濟","中國地理"));
+$("#geography" ).append(createChapter("資源問題與環境保育","中國地理"));
+$("#geography" ).append(createChapter("南部地區","中國地理"));
+$("#geography" ).append(createChapter("北部地區","中國地理"));
+$("#geography" ).append(createChapter("西部地區","中國地理"));
+$("#geography" ).append(createUnit("世界地理"));
+$("#geography" ).append(createChapter("世界概說","世界地理"));
+$("#geography" ).append(createChapter("東北亞","世界地理"));
+$("#geography" ).append(createChapter("東南亞與南亞","世界地理"));
 //---歷史目錄---
+$("#history"   ).append(createSpan("歷史"));
 $("#history"   ).append(createUnit("台灣歷史"));
 $("#history"   ).append(createChapter("史前台灣與原住民文化","台灣歷史"));
 $("#history"   ).append(createChapter("國際競爭下的台灣","台灣歷史"));
@@ -118,7 +156,33 @@ $("#history"   ).append(createChapter("胡漢融合的隋唐帝國","中國歷�
 $("#history"   ).append(createChapter("多民族並立的宋元時期","中國歷史"));
 $("#history"   ).append(createChapter("明代與盛清的發展","中國歷史"));
 $("#history"   ).append(createChapter("晚清的變局","中國歷史"));
+$("#history"   ).append(createChapter("清末的改革","中國歷史"));
+$("#history"   ).append(createChapter("清朝的覆亡","中國歷史"));
+$("#history"   ).append(createChapter("民初的政局與社會變遷","中國歷史"));
+$("#history"   ).append(createChapter("國民政府的統治","中國歷史"));
+$("#history"   ).append(createChapter("中華人民共和國的建立與發展","中國歷史"));
 //---公民目錄---
+$("#citizen"   ).append(createSpan("公民"));
+$("#citizen"   ).append(createUnit("個人與社會生活"));
+$("#citizen"   ).append(createChapter("自我的成長","個人與社會生活"));
+$("#citizen"   ).append(createChapter("和諧的性別關係","個人與社會生活"));
+$("#citizen"   ).append(createChapter("家庭生活","個人與社會生活"));
+$("#citizen"   ).append(createChapter("家庭協奏曲","個人與社會生活"));
+$("#citizen"   ).append(createChapter("友善校園與終身學習","個人與社會生活"));
+$("#citizen"   ).append(createChapter("社區生活","個人與社會生活"));
+$("#citizen"   ).append(createChapter("社會互動","個人與社會生活"));
+$("#citizen"   ).append(createChapter("社會中的團體","個人與社會生活"));
+$("#citizen"   ).append(createChapter("社會規範","個人與社會生活"));
+$("#citizen"   ).append(createChapter("社會中的文化","個人與社會生活"));
+$("#citizen"   ).append(createChapter("變遷中的社會","個人與社會生活"));
+$("#citizen"   ).append(createChapter("社會福利","個人與社會生活"));
+$("#citizen"   ).append(createUnit("民主的政治"));
+$("#citizen"   ).append(createChapter("現代國家與民主政治","民主的政治"));
+$("#citizen"   ).append(createChapter("中央政府","民主的政治"));
+$("#citizen"   ).append(createChapter("地方政府","民主的政治"));
+$("#citizen"   ).append(createChapter("政府的經濟功能","民主的政治"));
+$("#citizen"   ).append(createChapter("政黨與利益團體","民主的政治"));
+$("#citizen"   ).append(createChapter("政治參與和選舉","民主的政治"));
 $("#citizen"   ).append(createUnit("法律生活"));
 $("#citizen"   ).append(createChapter("法律的基本概念","法律生活"));
 $("#citizen"   ).append(createChapter("人民的權利與義務","法律生活"));
@@ -127,6 +191,7 @@ $("#citizen"   ).append(createChapter("刑法與行政法規","法律生活"));
 $("#citizen"   ).append(createChapter("權利救濟","法律生活"));
 $("#citizen"   ).append(createChapter("少年的法律常識","法律生活"));
 //---生物目錄---
+$("#biology"   ).append(createSpan("生物"));
 $("#biology"   ).append(createUnit("生命世界"));
 $("#biology"   ).append(createChapter("生物與環境","生命世界"));
 $("#biology"   ).append(createChapter("生物體的構造","生命世界"));

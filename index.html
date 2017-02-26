@@ -13,15 +13,11 @@
 <body>
 	<ul id="title">
 		國中學習筆記
-		<a href="javascript:subject('#chinese')"      class="subjectIndex chinese"     >國文</a>
-		<a href="javascript:subject('#english')"      class="subjectIndex english"     >英文</a>
-		<a href="javascript:subject('#math')"         class="subjectIndex math"        >數學</a>
-		<a href="javascript:subject('#geography')"    class="subjectIndex geography"   >地理</a>
-		<a href="javascript:subject('#history')"      class="subjectIndex history"     >歷史</a>
-		<a href="javascript:subject('#citizen')"      class="subjectIndex citizen"     >公民</a>
-		<a href="javascript:subject('#biology')"      class="subjectIndex biology"     >生物</a>
-		<a href="javascript:subject('#science')"      class="subjectIndex science"     >理化</a>
-		<a href="javascript:subject('#earthScience')" class="subjectIndex earthScience">地科</a>
+		<a href="javascript:subject('#chinese')" class="subjectIndex">國文</a>
+		<a href="javascript:subject('#english')" class="subjectIndex">英文</a>
+		<a href="javascript:subject('#math')"    class="subjectIndex">數學</a>
+		<a href="javascript:subject('#society')" class="subjectIndex">社會</a>
+		<a href="javascript:subject('#natural')" class="subjectIndex">自然</a>
 	</ul>
 	<br>
 	<div class = "container">
@@ -39,6 +35,13 @@
 			</div>
 			<div class = "col-md-7" id = "content">
 				<div>
+					<!--數學-->
+						<!--整數的運算-->
+					<div id = "數與數線" class = "content math">
+						<p class = "t mathU1T" >數與數線</p><br>
+						<div class = "c20">
+						</div>
+					</div>
 					<!--歷史-->
 						<!--台灣歷史-->
 					<div id = "史前台灣與原住民文化" class = "content history">
@@ -169,6 +172,31 @@
 						</div>
 						</div>
 					</div>
+					<div id = "清末的改革" class = "content history">
+						<p class = "t historyU2T" >清末的改革</p><br>
+						<div class = "c20">
+						</div>
+					</div>
+					<div id = "清朝的覆亡" class = "content history">
+						<p class = "t historyU2T" >清朝的覆亡</p><br>
+						<div class = "c20">
+						</div>
+					</div>
+					<div id = "民初的政局與社會變遷" class = "content history">
+						<p class = "t historyU2T" >民初的政局與社會變遷</p><br>
+						<div class = "c20">
+						</div>
+					</div>
+					<div id = "國民政府的統治" class = "content history">
+						<p class = "t historyU2T" >國民政府的統治</p><br>
+						<div class = "c20">
+						</div>
+					</div>
+					<div id = "中華人民共和國的建立與發展" class = "content history">
+						<p class = "t historyU2T" >中華人民共和國的建立與發展</p><br>
+						<div class = "c20">
+						</div>
+					</div>
 					<!--公民-->
 						<!--法律生活-->
 					<div id = "法律的基本概念" class = "content citizen">
@@ -271,8 +299,9 @@
 		</div>
 		<br>
 	</div>
-	<script language="javascript" src="js/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/title.css">
 	<link rel="stylesheet" type="text/css" href="css/content.css">
+	<script language="javascript" src="js/index.js"></script>
 	<script src="js/canvas.js"></script>
 </body>
 </html>

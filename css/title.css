@@ -1,0 +1,24 @@
+.mathU1T {
+	background: -webkit-linear-gradient(left top, rgb(0, 160, 80), rgb(0, 160, 120));
+}
+.mathU1S {
+	border-color: rgb(0, 160, 100);
+}
+.historyU1T {
+	background: -webkit-linear-gradient(left top, rgb(200, 130, 90), rgb(200, 170, 90));
+}
+.historyU1S {
+	border-color: rgb(200, 150, 90);
+}
+.historyU2T {
+	background: -webkit-linear-gradient(left top, rgb(200, 20, 0), rgb(200, 100, 0));
+}
+.historyU2S {
+	border-color: rgb(200, 60, 0);
+}
+.citizenU3T {
+	background: -webkit-linear-gradient(left top, rgb(0, 0, 160), rgb(0, 0, 80));
+}
+.citizenU3S {
+	border-color: rgb(0, 0, 120);
+}
