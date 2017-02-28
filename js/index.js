@@ -53,7 +53,7 @@ $("#math"      ).append(createUnit("分數的運算"));
 $("#math"      ).append(createChapter("因數與倍數","分數的運算"));
 $("#math"      ).append(createChapter("最大公因數與最小公倍數","分數的運算"));
 $("#math"      ).append(createChapter("分數的加減運算","分數的運算"));
-$("#math"      ).append(createChapter("分數的乘除與四則運算","分數的運算"));
+$("#math"      ).append(createChapter("分數的乘除與四則運算","分數運算"));
 $("#math"      ).append(createUnit("一元一次方程式"));
 $("#math"      ).append(createChapter("以符號列式與運算","一元一次方程式"));
 $("#math"      ).append(createChapter("一元一次方程式的列式與求解","一元一次方程式"));
