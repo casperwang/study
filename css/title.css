@@ -40,3 +40,9 @@
 .citizenU3S {
 	border-color: rgb(0, 0, 120);
 }
+.scienceU7T {
+	background: -webkit-linear-gradient(left top, rgb(0, 200, 160), rgb(0, 200, 240));
+}
+.scienceU7S {
+	border-color: rgb(0, 200, 200);
+}
