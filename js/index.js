@@ -44,6 +44,7 @@ function chapter(chapter, unit) {
 	$('.c' + chapter).css("font-weight","bold");
 	$('#' + chapter).show();
 	nowChapter = chapter;
+	$('.ans').text("");
 }
 //---數學目錄---
 $("#math"      ).append(createUnit("整數的運算"));
@@ -258,6 +259,7 @@ $("#science"   ).append(createChapter("細數原子與分子","化學反應"));
 $("#science"   ).append(createChapter("化學計量","化學反應"));
 //計算
 var input = 0;
+var output = 0;
 //---理化---
 var fdb = new ForerunnerDB();
 var db = fdb.db("element");
@@ -427,9 +429,18 @@ function MolecularWeight(input) {
 }
 function scienceU7C1(a){
 	if (a == 1 && $('#scienceU7C1-1').val() != "") {
+		$('#scienceU7C1-1Ans').text("")
 		input = $('#scienceU7C1-1').val();
 		$('#scienceU7C1-1').val("");
-		$('#scienceU7C1-1Ans').text(input + "分子量: " + MolecularWeight(input));
+		output = input;
+		for (var i = 0; i < output.length; i++) {
+			if(numOrNot(output.charAt(i)) == true) {
+				$('#scienceU7C1-1Ans').html($('#scienceU7C1-1Ans').html() + output.charAt(i).sub());
+			} else {
+				$('#scienceU7C1-1Ans').html($('#scienceU7C1-1Ans').html() + output.charAt(i));
+			}
+		}
+		$('#scienceU7C1-1Ans').html($('#scienceU7C1-1Ans').html() + " 分子量: " + MolecularWeight(input));
 	} else if (a == 2  && $('#scienceU7C1-2-1').val() != "" && ($('#scienceU7C1-2-2').val() != "" || $('#scienceU7C1-2-3').val() != "")) {
 		input = $('#scienceU7C1-2-1').val();
 		if ($('#scienceU7C1-2-2').val() != "") {
