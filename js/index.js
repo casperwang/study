@@ -1,3 +1,6 @@
+function numOrNot(val) {
+	return val == "1" || val == "2" || val == "3" || val == "4" || val == "5" || val == "6" || val == "7" || val == "8" || val == "9" || val == "0";
+}
 var nowUnit;
 var nowChapter;
 $('.content').hide();
@@ -253,3 +256,186 @@ $("#science"   ).append(createUnit("化學反應"));
 $("#science"   ).append(createChapter("質量守恆","化學反應"));
 $("#science"   ).append(createChapter("細數原子與分子","化學反應"));
 $("#science"   ).append(createChapter("化學計量","化學反應"));
+//計算
+var input = 0;
+//---理化---
+var fdb = new ForerunnerDB();
+var db = fdb.db("element");
+var elementCollection = db.collection('element');
+//---元素週期表---
+{
+	elementCollection.insert({
+		abbreviation: 'H',
+		AtomicOrder: 1,
+		atomicWeight: 1,
+	})
+	elementCollection.insert({
+		abbreviation: 'He',
+		AtomicOrder: 2,
+		atomicWeight: 4,
+	})
+	elementCollection.insert({
+		abbreviation: 'C',
+		AtomicOrder: 6,
+		atomicWeight: 12,
+	})
+	elementCollection.insert({
+		abbreviation: 'N',
+		AtomicOrder: 7,
+		atomicWeight: 14,
+	})
+	elementCollection.insert({
+		abbreviation: 'O',
+		AtomicOrder: 8,
+		atomicWeight: 16,
+	})
+	elementCollection.insert({
+		abbreviation: 'Na',
+		AtomicOrder: 11,
+		atomicWeight: 23,
+	})
+	elementCollection.insert({
+		abbreviation: 'Al',
+		AtomicOrder: 13,
+		atomicWeight: 27,
+	})
+	elementCollection.insert({
+		abbreviation: 'S',
+		AtomicOrder: 16,
+		atomicWeight: 32,
+	})
+	elementCollection.insert({
+		abbreviation: 'Cl',
+		AtomicOrder: 17,
+		atomicWeight: 35.5,
+	})
+	elementCollection.insert({
+		abbreviation: 'K',
+		AtomicOrder: 19,
+		atomicWeight: 39,
+	})
+	elementCollection.insert({
+		abbreviation: 'Ca',
+		AtomicOrder: 20,
+		atomicWeight: 40,
+	})
+	elementCollection.insert({
+		abbreviation: 'Cu',
+		AtomicOrder: 29,
+		atomicWeight: 63.5,
+	})
+}
+function MolecularWeight(input) {
+	var total = 0;
+	var atomicWeight = 0;
+	for (var i = 0; i < input.length; i++) {
+		if (input.charAt(i).toUpperCase() == input.charAt(i) && numOrNot(input.charAt(i)) == false && input.charAt(i) != "(" && input.charAt(i) != ")") {
+			if (input.charAt(i+1).toLowerCase() == input.charAt(i+1) && numOrNot(input.charAt(i+1)) == false) {
+				if (numOrNot(input.charAt(i+2)) == true){
+					if (numOrNot(input.charAt(i+3)) == true) {
+						atomicWeight = elementCollection.find({
+							abbreviation: input.charAt(i) + input.charAt(i+1)
+						})[0].atomicWeight * ((input.charAt(i+2) - 1 + 1) * 10 + ((input.charAt(i+3) - 1 + 1)));
+						i = i + 3;
+					} else {
+						atomicWeight = elementCollection.find({
+							abbreviation: input.charAt(i) + input.charAt(i+1)
+						})[0].atomicWeight * (input.charAt(i+2) - 1 + 1);
+						i = i + 2;
+					}
+				} else {
+					atomicWeight = elementCollection.find({
+						abbreviation: input.charAt(i) + input.charAt(i+1)
+					})[0].atomicWeight;
+					i = i + 1;
+				}
+			} else if (numOrNot(input.charAt(i+1)) == true){
+				if (numOrNot(input.charAt(i+2)) == true){
+					atomicWeight = elementCollection.find({
+							abbreviation: input.charAt(i)
+					})[0].atomicWeight * ((input.charAt(i+1) - 1 + 1) * 10 + ((input.charAt(i+2) - 1 + 1)));
+					i = i + 2;
+				} else {
+					atomicWeight = elementCollection.find({
+							abbreviation: input.charAt(i)
+					})[0].atomicWeight * (input.charAt(i+1) - 1 + 1);
+					i = i + 1;
+				}
+			} else {
+				atomicWeight = elementCollection.find({
+					abbreviation: input.charAt(i)
+				})[0].atomicWeight;
+			}
+			total = total + atomicWeight;
+		} else if (input.charAt(i) == "(") {
+			var j = i;
+			atomicWeight = 0;
+			while(input.charAt(j) != ")") {
+				j++;
+				if (input.charAt(j).toUpperCase() == input.charAt(j) && numOrNot(input.charAt(j)) == false && input.charAt(j) != "(" && input.charAt(j) != ")") {
+					if (input.charAt(j+1).toLowerCase() == input.charAt(j+1) && numOrNot(input.charAt(j+1)) == false && input.charAt(j+1) != "(" && input.charAt(j+1) != ")") {
+						if (numOrNot(input.charAt(j+2)) == true){
+							if (numOrNot(input.charAt(j+3)) == true) {
+								atomicWeight = elementCollection.find({
+									abbreviation: input.charAt(j) + input.charAt(j+1)
+								})[0].atomicWeight * ((input.charAt(j+2) - 1 + 1) * 10 + ((input.charAt(ji+3) - 1 + 1))) + atomicWeight;
+								j = j + 3;
+							} else {
+								atomicWeight = elementCollection.find({
+									abbreviation: input.charAt(j) + input.charAt(j+1)
+								})[0].atomicWeight * (input.charAt(j+2) - 1 + 1) + atomicWeight;
+								j = j + 2;
+							}
+						} else {
+							atomicWeight = elementCollection.find({
+								abbreviation: input.charAt(j) + input.charAt(j+1)
+							})[0].atomicWeight + atomicWeight;
+							j = j + 1;
+						}
+					} else if (numOrNot(input.charAt(j+1)) == true){
+						if (numOrNot(input.charAt(j+2)) == true){
+							atomicWeight = elementCollection.find({
+									abbreviation: input.charAt(j)
+							})[0].atomicWeight * ((input.charAt(j+1) - 1 + 1) * 10 + ((input.charAt(j+2) - 1 + 1))) + atomicWeight;
+							j = j + 2;
+						} else {
+							atomicWeight = elementCollection.find({
+									abbreviation: input.charAt(j)
+							})[0].atomicWeight * (input.charAt(j+1) - 1 + 1) + atomicWeight;
+							j = j + 1;
+						}
+					} else {
+						atomicWeight = elementCollection.find({
+							abbreviation: input.charAt(j)
+						})[0].atomicWeight + atomicWeight;
+					}
+				}
+			}
+			j++;
+			if (numOrNot(input.charAt(j+1)) == true){
+				atomicWeight = atomicWeight * ((input.charAt(j) - 1 + 1) * 10 + ((input.charAt(j+1) - 1 + 1)));
+				j = j + 2;
+			} else if (numOrNot(input.charAt(j)) == true){
+				atomicWeight = atomicWeight * (input.charAt(j) - 1 + 1);
+				j = j + 1;
+			}
+			total = total + atomicWeight;
+			i = j;
+		}
+	}
+	return total;
+}
+function scienceU7C1(a){
+	if (a == 1 && $('#scienceU7C1-1').val() != "") {
+		input = $('#scienceU7C1-1').val();
+		$('#scienceU7C1-1').val("");
+		$('#scienceU7C1-1Ans').text(input + "分子量: " + MolecularWeight(input));
+	} else if (a == 2  && $('#scienceU7C1-2-1').val() != "" && ($('#scienceU7C1-2-2').val() != "" || $('#scienceU7C1-2-3').val() != "")) {
+		input = $('#scienceU7C1-2-1').val();
+		if ($('#scienceU7C1-2-2').val() != "") {
+			$('#scienceU7C1-2-3').val(($('#scienceU7C1-2-2').val() - 1 + 1) / MolecularWeight(input));
+		} else {
+			$('#scienceU7C1-2-2').val(($('#scienceU7C1-2-3').val() - 1 + 1) * MolecularWeight(input));
+		}
+	}
+}

@@ -1,4 +1,3 @@
-
 mathU1C1();
 function mathU1C1() {
 	var canvas = document.getElementById("mathU1C1-1");

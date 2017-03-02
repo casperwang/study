@@ -30,9 +30,25 @@ canvas {
 .c {
 	margin-left: 5px;
 }
+span {
+	font-size: 18px;
+}
 ul {
 	font-size: 18px;
-
+}
+input {
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+a {
+	font-size: 18px;
+	border-radius: 3px;
+	padding: 5px 12px;
+	border: 2px solid;
+	text-decoration:none;
+}
+.content a:hover {
+	background-color: rgb(230, 230, 230);
 }
 table {
 	margin-bottom: 10px;
