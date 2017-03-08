@@ -27,6 +27,12 @@ canvas {
 	margin-left: 10px;
 	border-bottom: 2px solid;
 }
+.ssst {
+	font-size: 18px;
+	padding: 1px 6px;
+	margin-left: 20px;
+	border-bottom: 2px dashed;
+}
 .c {
 	margin-left: 5px;
 }
@@ -65,12 +71,20 @@ td,tr {
 .italic {
 	font-style: italic;
 }
+.mark1 {
+	background-color: transparent;
+	background-image: -webkit-linear-gradient(transparent 30%, rgb(255, 255, 50) 30%, rgb(255, 255, 50) 70%, transparent 70%);
+}
 .srcString {
 	position:relative;
 	height: 0;
 	margin-bottom: 0px;
 	margin-left: 20px;
 	color: white;
+}
+img {
+	background-color:transparent;
+	margin-left: 20px;
 }
 #citizenU3C1-1 {
 	margin-left: 120px;

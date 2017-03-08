@@ -4,6 +4,9 @@
 .l3 {
 	width: 90px;
 }
+.l4 {
+	width: 110px;
+}
 .l5 {
 	width: 130px;
 }
@@ -25,33 +28,33 @@
 .l12 {
 	width: 270px;
 }
-.mathU1T {
+.mathT {
+	background: -webkit-linear-gradient(left top, rgb(255, 120, 0), rgb(255, 200, 0));
+}
+.mathS {
+	border-color: rgb(255, 160, 0);
+}
+.geographyT {
 	background: -webkit-linear-gradient(left top, rgb(0, 160, 80), rgb(0, 160, 120));
 }
-.mathU1S {
+.geographyS {
 	border-color: rgb(0, 160, 100);
 }
-.historyU1T {
-	background: -webkit-linear-gradient(left top, rgb(200, 130, 90), rgb(200, 170, 90));
-}
-.historyU1S {
-	border-color: rgb(200, 150, 90);
-}
-.historyU2T {
+.historyT {
 	background: -webkit-linear-gradient(left top, rgb(200, 20, 0), rgb(200, 100, 0));
 }
-.historyU2S {
+.historyS {
 	border-color: rgb(200, 60, 0);
 }
-.citizenU3T {
+.citizenT {
 	background: -webkit-linear-gradient(left top, rgb(0, 0, 160), rgb(0, 0, 80));
 }
-.citizenU3S {
+.citizenS {
 	border-color: rgb(0, 0, 120);
 }
-.scienceU7T {
+.scienceT {
 	background: -webkit-linear-gradient(left top, rgb(0, 200, 160), rgb(0, 200, 240));
 }
-.scienceU7S {
+.scienceS {
 	border-color: rgb(0, 200, 200);
 }
