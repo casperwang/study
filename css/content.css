@@ -63,7 +63,7 @@ table {
 	margin-left: 20px;
 }
 td,tr {
-	border: 1.0px solid black;
+	border: 1.0px solid rgb(200, 200, 200);
 	padding: 1px 4px;
 	margin-left: 20px;
 }
