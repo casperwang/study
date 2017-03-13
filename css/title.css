@@ -31,6 +31,28 @@
 .l12 {
 	width: 270px;
 }
+.st {
+	font-size: 20px;
+	padding: 2px 12px;
+	border-radius: 5px;
+	color: black;
+	border: 3px solid;
+	color: rgb(30, 78, 121);
+}
+.sst {
+	font-size: 19px;
+	padding: 1px 6px;
+	margin-left: 10px;
+	border-bottom: 2px solid;
+	color: rgb(46, 117, 181);
+}
+.ssst {
+	font-size: 18px;
+	padding: 1px 6px;
+	margin-left: 20px;
+	border-bottom: 2px dashed;
+	color: rgb(91, 155, 213);
+}
 .mathT {
 	background: -webkit-linear-gradient(left top, rgb(255, 120, 0), rgb(255, 200, 0));
 }
