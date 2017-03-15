@@ -15,19 +15,17 @@
 <body>
 	<ul id="title">
 		國中學習筆記
-		<a href="javascript:subject('#chinese')" class="subjectIndex">國文</a>
-		<a href="javascript:subject('#english')" class="subjectIndex">英文</a>
-		<a href="javascript:subject('#math')"    class="subjectIndex">數學</a>
-		<a href="javascript:subject('#society')" class="subjectIndex">社會</a>
-		<a href="javascript:subject('#natural')" class="subjectIndex">自然</a>
+		<a href="javascript:subject('#geography')"    class="subjectIndex">地理</a>
+		<a href="javascript:subject('#history')"      class="subjectIndex">歷史</a>
+		<a href="javascript:subject('#citizen')"      class="subjectIndex">公民</a>
+		<a href="javascript:subject('#biology')"      class="subjectIndex">生物</a>
+		<a href="javascript:subject('#science')"      class="subjectIndex">理化</a>
+		<a href="javascript:subject('#earthScience')" class="subjectIndex">地科</a>
 	</ul>
 	<br>
 	<div class = "container">
 		<div class = "row">
 			<div class = "col-md-4">
-				<div id = "chinese"      class = "subject chinese"     ></div>
-				<div id = "english"      class = "subject english"     ></div>
-				<div id = "math"         class = "subject math"        ></div>
 				<div id = "geography"    class = "subject geography"   ></div>
 				<div id = "history"      class = "subject history"     ></div>
 				<div id = "citizen"      class = "subject citizen"     ></div>
@@ -37,66 +35,6 @@
 			</div>
 			<div class = "col-md-7" id = "content">
 				<div>
-					<!--數學-->
-						<!--整數的運算-->
-					<div id = "數與數線" class = "content math">
-						<p class = "t mathT" >數與數線</p><br>
-						<div class = "c20">
-						<p class = "st mathS l5">正數與負數</p>
-						<div class = "c">
-							<p class = "sst mathS" style = "width: 107px;">正數與負數</p>
-							<ul type = "disc">
-								<li>正數: 大於0的數字</li>
-								<ul type = "disc">
-									<li>正整數(自然數): 最小的是1</li>
-								</ul>
-								<li>負數: 小於0的數字</li>
-								<ul type = "disc">
-									<li>負整數: 最大的是-1</li>
-								</ul>
-								<li>0: 不是正數也不是負數</li>
-								<li>整數: 正整數、0、負整數</li>
-							</ul>
-							<p class = "sst mathS" style = "width: 183px;">性質符號與運算符號</p>
-							<ul type = "disc">
-								<li>性質符號: 正(+)、負(-)</li>
-								<ul type = "disc">
-									<li>同號數: 性質符號相同的數</li>
-									<li>異號數: 性質符號相異的數</li>
-								</ul>
-								<li>運算符號: 加(+)、減(-)</li>
-							</ul>
-						</div>
-						<p class = "st mathS l7">數線與數的大小</p>
-						<div class = "c">
-							<p class = "sst mathS" style = "width: 50px;">數線</p>
-							<ul type = "disc">
-								<li>原點(<span class = "italic">Ｏ</span>點): 取任一點作基準點</li>
-								<li>正向: 箭頭所指方向</li>
-								<li>單位長: 取任一段長度作單位長</li>
-							</ul>
-							<canvas id="mathU1C1-1" width="500" height="60"></canvas>
-							<p class = "srcString2" style = "top: -30px;left: 79px">-1</p>
-							<p class = "srcString2" style = "top: -30px;left: 159px">-2</p>
-							<p class = "srcString2" style = "top: -30px;left: 225px"><span class = "italic">Ｏ</span>點</p>
-							<p class = "srcString2" style = "top: -65px;left: 266px">單位長</p>
-							<p class = "srcString2" style = "top: -30px;left: 327px">1</p>
-							<p class = "srcString2" style = "top: -30px;left: 407px">2</p>
-							<p class = "sst mathS" style = "width: 145px;">三一律與遞移律</p>
-							<ul type = "disc">
-								<li>三一律: a＞b、a＝b、a＜b 必有一種成立</li>
-								<li>遞移律: a＝b 且 b＝c ～ a＝c</li>
-								　　　　a＞b 且 b＞c ～ a＞c<br>
-								　　　　a＜b 且 b＜c ～ a＜c<br>
-							</ul>
-						</div>
-						<p class = "st mathS l7">相反數與絕對值</p>
-						<div class = "c">
-							<p class = "sst mathS" style = "width: 69px;">相反數</p>
-							<p class = "sst mathS" style = "width: 69px;">絕對值</p>
-						</div>
-						</div>
-					</div>
 					<!--地理-->
 						<!--台灣地理-->
 					<div id = "產業" class = "content geography">
@@ -480,7 +418,7 @@
 								<li>賠款</li>
 								<li>公使入駐北京</li>
 								<li>增開長江沿岸、台灣沿海</li>
-								<li>外國人可至內地遊歷、傳教</li>
+								<li>外國人可至內地遊歷、傳教～列強勢力由沿海深入內地</li>
 							</ul>
 							<p class = "sst historyS" style = "width: 112px;">2<sup>st</sup>英法聯軍</p>
 							<ul type = "disc">
@@ -492,7 +430,6 @@
 								<li>割讓九龍司予英國</li>
 								<li>增開天津</li>
 							</ul>
-							<p class = "sst historyS" style = "width: 221px;">列強勢力由沿海深入內地</p>
 						</div>
 						<p class = "st historyS l5">俄國的侵略</p>
 						<div class = "c">
