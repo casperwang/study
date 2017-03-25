@@ -72,10 +72,10 @@
 	border-color: rgb(200, 60, 0);
 }
 .citizenT {
-	background: -webkit-linear-gradient(left top, rgb(0, 0, 160), rgb(0, 0, 80));
+	background: -webkit-linear-gradient(left top, rgb(20, 0, 160), rgb(80, 0, 120));
 }
 .citizenS {
-	border-color: rgb(0, 0, 120);
+	border-color: rgb(50, 0, 140);
 }
 .scienceT {
 	background: -webkit-linear-gradient(left top, rgb(0, 200, 160), rgb(0, 200, 240));

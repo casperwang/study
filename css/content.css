@@ -14,27 +14,6 @@ canvas {
 .c20 {
 	margin-left: 20px;
 }
-.st {
-	font-size: 20px;
-	padding: 2px 12px;
-	border-radius: 5px;
-	color: black;
-	border: 3px solid;
-	color: rgb(30, 78, 121);
-}
-.sst {
-	font-size: 19px;
-	padding: 1px 6px;
-	margin-left: 10px;
-	border-bottom: 2px solid;
-	color: rgb(46, 117, 181);
-}
-.ssst {
-	font-size: 18px;
-	padding: 1px 6px;
-	margin-left: 20px;
-	border-bottom: 2px dashed;
-}
 .c {
 	margin-left: 5px;
 }
@@ -60,7 +39,7 @@ a {
 }
 table {
 	margin-bottom: 10px;
-	margin-left: 20px;
+	margin-left: 30px;
 }
 td,tr {
 	border: 1.0px solid rgb(200, 200, 200);
@@ -73,7 +52,7 @@ td,tr {
 .italic {
 	font-style: italic;
 }
-.mark1 {
+.mark {
 	background-color: transparent;
 	background-image: -webkit-linear-gradient(transparent 30%, rgb(255, 255, 50) 30%, rgb(255, 255, 50) 70%, transparent 70%);
 }
