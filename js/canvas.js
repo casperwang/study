@@ -16,7 +16,7 @@ function historyU2C1() {
 		image2.onload = function() {
     		ctx.drawImage(image2, 0, 0, 360, 330);
 		}
-		image.src = 'images/中國地圖.png';
+		image.src = 'images/China.png';
 	}
 }
 	
