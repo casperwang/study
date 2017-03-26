@@ -10,7 +10,7 @@ function historyU2C1() {
 			ctx.fillStyle = "rgb(255, 255, 255)";
 			ctx.fillRect(0, 0, 180, 20);
 			ctx.closePath();
-			image2.src = 'img/0001.png';
+			image2.src = 'images/0001.png';
 		}
 		var image2 = new Image();
 		image2.onload = function() {
