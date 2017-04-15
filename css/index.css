@@ -4,23 +4,22 @@ body {
 	display:none;
 }
 #title {
-	font-size: 52px;
-	text-align: left;
-	margin-left: 20px;
-	margin-right: 20px;
+	font-size: 64px;
+	text-align: center;
+	padding-left: 0px;
 }
 .subjectIndex {
     padding: 6px 9px;
-    color: black;
-    font-size: 24px;
+    font-size: 28px;
     text-decoration:none;
-    border: 2px solid rgb(210, 210, 210);
-    background-color: rgb(210, 210, 210);
     margin-right: -10px;
+    border-radius: 5px;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    color: black;
 }
 .subjectIndex:hover {
-	background-color: rgb(190, 190, 190);
 	text-decoration:none;
+	background-color: rgb(240, 240, 240);
 	color: black;
 }
 .subjectIndex:focus {

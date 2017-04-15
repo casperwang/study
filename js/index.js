@@ -178,6 +178,12 @@ $("#science"   ).append(createUnit("化學反應"));
 $("#science"   ).append(createChapter("質量守恆","化學反應"));
 $("#science"   ).append(createChapter("細數原子與分子","化學反應"));
 $("#science"   ).append(createChapter("化學計量","化學反應"));
+$("#science"   ).append(createUnit("氧化還原"));
+$("#science"   ).append(createChapter("氧化反應","氧化還原"));
+$("#science"   ).append(createChapter("氧化與還原反應","氧化還原"));
+$("#science"   ).append(createChapter("氧化還原的應用","氧化還原"));
+$("#science"   ).append(createUnit("酸、鹼、鹽"));
+$("#science"   ).append(createChapter("認識電解質","酸、鹼、鹽"));
 //計算
 var input = 0;
 var output = 0;
